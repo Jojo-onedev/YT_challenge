@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: black;
+
+}
+
+.compte-icon{
+   background: white;
+}
+
+.icon, .iconlink{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+
+i{
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    transition: 0.2s ease;
+    z-index: 10;
+}
+
+header div.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: 0.2s ease;
+}
+
+.start,
+.center .input-box,
+.end {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 30px;
+}
+
+.logo a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.start .icon {
+    margin: 0;
+}
+
+.end {
+    margin-right: 20px;
+}
+
+header .logo {
+    margin-left: 20px;
+}
+
+.input-box input {
+    width: 280px;
+    outline: none;
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 20px;
+    padding: 13px 15px;
+    background: transparent;
+    color: white;
+}
+
+header img {
+    width: 50px;
+}
+
+
+nav {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 480px;
+}
+
+nav a {
+    color: white;
+    font-size: 12px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link .iconlink {
+    width: 50px;
+    height: 70px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.link .iconlink:hover{
+    background-color: rgba(255, 255, 255, 0.244);
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100%-100px);
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.container .wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+    row-gap: 20px;
+}
+
+.wrapper .module {
+    width: 360px;
+    height: 270px;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.module h1 {
+    color: white;
+    font-size: 1em;
+}
+
+.module-img{
+    width: 360px;
+    height: 170px;
+}
+
+.module-img img {
+    width: 360px;
+    height: 170px;
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.module-img img:hover {
+    transform: scale(1.05);
+}
+
+.wrapper2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+}
+
+.wrapper2 h2 {
+    color: white;
+    margin: 20px 0 0 20px;
+}
+
+.wrapping2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.module2 {
+    width: 200px;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.module2 p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.module2::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.532);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.module2:hover p {
+    font-size: 1.3em;
+
+}
+
+.suite{
+    margin-top: 30px;
+}
+
+@media (max-width:1228px) {
+    .wrapper .module {
+        width: 350px;
+        height: 270px;
+    }
+}
+
+@media (max-width:1198px) {
+    .wrapper .module {
+        width: 330px;
+        height: 270px;
+    }
+}
+
+@media (max-width:1147px) {
+    .wrapper .module {
+        width: 300px;
+        height: 270px;
+    }
+}
+
+
+@media (max-width:1061px) {
+    .wrapper .module {
+        width: 280px;
+        height: 270px;
+    }
+}
+
+
+@media (max-width:989px) {
+    .wrapper .module {
+        width: 260px;
+        height: 270px;
+    }
+}
+
+
+@media (max-width:903px) {
+    .wrapper .module {
+        width: 360px;
+        height: 270px;
+    }
+}
+
+@media (max-width:869px) {
+    .wrapper .module {
+        width: 340px;
+        height: 270px;
+    }
+}
+
+@media (max-width:829px) {
+    .wrapper .module {
+        width: 320px;
+        height: 270px;
+    }
+
+    .input-box input{
+        display: none;
+    }
+}
+
+@media (max-width:791px) {
+    .wrapper .module {
+        width: 300px;
+        height: 270px;
+    }
+
+}
+
+@media (max-width:719px) {
+    .wrapper .module {
+        width: 460px;
+        height: 270px;
+    }
+
+    .module-img{
+        width: auto;
+        height: 200px;
+    }
+
+    .module-img img{
+        width: 460px;
+        height:  200px;
+    }
+
+}
+
+
+@media (max-width:710px) {
+    
+    nav, .center{
+      display: none;
+    }
+
+
+}
+
+
+
+@media (max-width:589px) {
+    .wrapper .module {
+        width: 440px;
+        height: 270px;
+    }
+
+    .module-img{
+        width: auto;
+        height: 200px;
+    }
+
+    .module-img img{
+        width: 460px;
+        height:  200px;
+    }
+
+}
+
+@media (max-width:557px) {
+    .wrapper .module {
+        width: 420px;
+        height: 270px;
+    }
+
+    .module-img{
+        width: auto;
+        height: 200px;
+    }
+
+    .module-img img{
+        width: 460px;
+        height:  200px;
+    }
+
+}
+
+@media (max-width:537px) {
+    .wrapper .module {
+        width: 400px;
+        height: 270px;
+    }
+
+    .module-img{
+        width: auto;
+        height: 200px;
+    }
+
+    .module-img img{
+        width: 460px;
+        height:  200px;
+    }
+
+}
+
+@media (max-width:518px) {
+    .wrapper .module {
+        width: 380px;
+        height: 270px;
+    }
+
+    .module-img{
+        width: auto;
+        height: 200px;
+    }
+
+    .module-img img{
+        width: 460px;
+        height:  200px;
+    }
+
+}
+
