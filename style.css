@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -7,7 +7,6 @@
 body {
     box-sizing: border-box;
     background-color: black;
-
 }
 
 .compte-icon{
@@ -427,6 +426,34 @@ nav a {
         width: 460px;
         height:  200px;
     }
+
+}
+
+@media (max-width:967px) {
+    .wrapping2 .module2:last-child {
+        display: none;
+    }
+
+}
+
+@media (max-width:747px) {
+    .wrapping2 .module2:nth-child(3) {
+        display: none;
+    }
+
+}
+
+@media (max-width:528px) {
+    .wrapping2 .module2:nth-child(2) {
+        display: none;
+    }
+
+}
+
+@media (max-width:708px) {
+   .container{
+    left: 30px;
+   }
 
 }
 
